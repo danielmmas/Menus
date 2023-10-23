@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.imamblek.petagram">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:label="Semana4">
+        <activity android:name="com.bojorqueanabel.semana4.ActivityContacto"
+            android:parentActivityName="com.bojorqueanabel.semana4.MainActivity">
+
+        </activity>
+        <activity android:name="com.bojorqueanabel.semana4.ActivityAcercade"
+            android:parentActivityName="com.bojorqueanabel.semana4.MainActivity">
+
+        </activity>
+        <activity
+            android:name="com.bojorqueanabel.semana4.MainActivity"
+
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bojorqueanabel.semana4.DetalleMascota"
+            android:parentActivityName="com.bojorqueanabel.semana4.MainActivity" />
+    </application>
+
+</manifest>
